@@ -1,3 +1,18 @@
+# usage
+
+clone the repo, then do
+`npm i`
+`npm start`
+The server will start on http://localhost:8000 by default, although the config file can be altered to change the port.
+
+## notes
+* In practice, all these API requests would likely go into a database or Redis server for caching so as to not make the user wait for relay API calls, but I felt that was beyond the scope of the project
+* The file structure could definitely be refactored and organized more cleanly, but I wanted to keep the delivery time down to a couple hours
+* I made no attempt to style the EJS
+* In a real project I would not commit config files to the code repo!
+* I caught the special cases in sorting by height and mass and feel like I handled them pretty well
+
+
 # node-exercise
 A little exercise using a Star Wars API [https://swapi.co/](https://swapi.co/)
 
